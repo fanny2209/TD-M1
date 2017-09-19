@@ -16,7 +16,21 @@ public class Test {
 
 		ArrayList<Point5> list = new ArrayList<>();
 		list.add(p1);
-		System.out.println(list.indexOf(p2));
+		System.out.println(list.indexOf(p2)); // verifie que p2 est un element de la liste list
 		System.out.println(list.indexOf(p3));
+		System.out.println(p1.equals(new String())); 
+		/*
+		 * .equal() compare les valeurs tandis que == compare les ref ! 
+		 * Addresse a1=new Address("Chez moi");
+			Addresse a2=new Address("Chez moi");
+			a1==a2;        // false
+		a1.equals(a2); // true
+		 */
+		
+		System.out.println(p2.equals(p1));
+		System.out.println(p1==p2);
+		System.out.println(p1.equals(p3));
+		System.out.println(p1==p3);
+		
 	}
 }
