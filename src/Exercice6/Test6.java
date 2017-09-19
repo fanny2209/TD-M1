@@ -21,8 +21,20 @@ public class Test6 {
 		lb.capacity();
 		//System.out.println(lb.contains(p2)); // true car regarde si la REFERENCE est présente
 		System.out.println(lb.contains(p2));
-		System.out.println(lb.contains(p3)); // WHY ???
+		//System.out.println(lb.contains(p3)); WHY ???
+		
+		System.out.println(lb.contains(null)); 
+
+
+		/*Checks that the specified object reference is not null. This method is designed primarily for doing parameter validation in methods and constructors, as demonstrated below:
+
+     public Foo(Bar bar) {
+         this.bar = Objects.requireNonNull(bar);
+     }
+		 */
+
+
 	}
 
-	
+
 }
