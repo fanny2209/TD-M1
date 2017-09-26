@@ -12,5 +12,13 @@ public class Value implements Expr {
 	public double eval() {
 		return this.val;
 	}
+
+	public double getVal() {
+		return val;
+	}
+	
+	public String toString(){
+		return ""+val;
+	}
 	
 }

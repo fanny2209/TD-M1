@@ -13,8 +13,17 @@ public class Mult implements Expr {
 		return e1.eval()*e2.eval();
 	}
 	
-	public String toString(){
-		return e1.toString()+" * " + e2.toString();
+	public Expr getE1() {
+		return e1;
 	}
+
+	public Expr getE2() {
+		return e2;
+	}
+
+	public String toString(){
+		return "("+e1.toString()+" * " + e2.toString()+")";
+	}
+	
 
 }

@@ -44,13 +44,13 @@ public class Junit {
 		assertEquals(16640.0, mult.eval(), 0.1);
 	}
 
-	/*@Test
+	@Test
 	public void sysoMult1() {
 		Expr val = new Value(1337.0);
 		Expr add = new Add(new Value(327.0), val);
 		Expr mult = new Mult(new Value(10.0), add);
 		assertEquals("(10.0)*(327.0+1337.0)", mult.toString());
-	}*/
+	}
 
 
 	@Test

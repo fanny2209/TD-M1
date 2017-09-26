@@ -15,7 +15,7 @@ public class Add implements Expr{
 	}
 	
 	public String toString(){
-		return e1.toString()+" + " + e2.toString();
+		return "("+e1.toString()+" + " + e2.toString()+")";
 	}
 
 	

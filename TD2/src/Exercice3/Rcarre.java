@@ -9,6 +9,14 @@ public class Rcarre implements Expr {
 			this.e2 = e2;
 		}
 		
+		public Expr getE1() {
+			return e1;
+		}
+
+		public Expr getE2() {
+			return e2;
+		}
+
 		public double eval(){
 			return e1.eval()*Math.sqrt(e2.eval());
 		}
