@@ -8,8 +8,10 @@ public class Main {
 		System.out.println(val.eval()); //affiche 1337.0
 		Expr add = new Add(new Value(327.0), val);
 		System.out.println(add.eval()); //affiche 1664.0
-		Expr e = new Add(new Value(350.0), add);
+		Expr e = new Mult(new Value(350.0), add);
 		System.out.println(e.eval()); //affiche 2014.0
+		Expr e2 = new Rcarre(new Value(350.0), add);
+		System.out.println(e2.eval()); //affiche 2014.0
 	}
 
 }
